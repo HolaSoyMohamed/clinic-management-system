@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>The Clinical Atelier - Appointments</title>
+            <link rel="stylesheet" href="Appointment1.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <div class="web-page">
+      <aside>
+         <div class="logo">
+            <h4 class="tca">The Clinical Atelier</h4>
+            <h6 class="mm">MEDICAL MANAGMENT</h6>
+         </div>
+         <div class="options">
+            <a href="Dashbourd.html" class="nav-item"><img src="dashboard.png"> Dashboard </a>
+            <a href="Patient.html" class="nav-item"><img src="group.png"> Patients</a>
+            <a href="Doctor.html" class="nav-item"><img src="medical-team.png"> Doctors</a>
+            <a href="Appointment.html" class="nav-item"><img src="schedule.png"> Appointment</a>
+            <a href="prescription1.html" class="nav-item"><img src="medical-prescription.png"> Prescriptions</a>
+         </div>
+         <div class="log">
+            <a href="LoginP.html" class="nav-item Logout"><img src="logout.png"> Log out</a>
+         </div>
+      </aside>
+      <div class="main">
+         <div class="header">
+            <div class="title">
+               <h1>New Appointment</h1>
+               <p class="cap">Configure a new clinical visit for your patient atrium</p>
+            </div>
+            <div class="profile">
+               <div class="info">
+                  <a class="name">Dr. Fady Hosny</a>
+                  <span>Chief Of Medicine</span>
+               </div>
+               <div class="photo">
+                  <img src="doctor fady.png">
+               </div>
+            </div>
+         </div>
+         <div class="main-container">
+            <div class="list">
+               <div class="patient">
+                  <label>SELECT PATIENT</label><br>
+                  <img src="patient.png"><input type="text" list="patients" placeholder="Search or select patient..."><button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"></button>
+                  <ul class="dropdown-menu">
+                     <li>Shehab</li>
+                     <li>Mohamed</li>
+                     <li>Ahmed</li>
+                  </ul>
+               </div>
+               <div class="patient">
+                  <label>SELECT DOCTOR</label><br>
+                  <img src="doctor Search.png"><input type="text" list="patients" placeholder="Search or select patient..."><button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"></button>
+                  <ul class="dropdown-menu">
+                     <li>Khalid</li>
+                     <li>Ziad</li>
+                     <li>Fady</li>
+                  </ul>
+               </div>
+               <div class="date">
+                  <div class="cal">
+                     <label>APPOINTMENT DATE</label><br>
+                     <img src="calendar.png"><input type="date">
+                  </div>
+                  <div class="time">
+                     <label>PREFERRED TIME</label><br>
+                     <img src="clock.png"><input type="time">
+                  </div>
+               </div>
+               <div class="notes">
+                  <label>CLINICAL NOTES</label><br>
+                  <textarea id="notes" class="clinical-notes" placeholder="   Briefly describe the reason for visit..."></textarea>
+               </div>
+               <div class="save">
+                  <button class="btn btn-primary"><img src="check-mark white.png">Save Appointment</button>
+               </div>
+            </div>
+            <div class="notification">
+               <div class="ps">
+                  <label>PATIENT SANCTUARY</label>
+                  <div class="p">
+                        <img src="patient.png">
+                     <div class="inf">
+                        <p class="cs">CURRENT SELECTION</p>
+                        <p class="sap">Select a patient</p></div>
+                  </div>
+                  <div class="detail">
+                     <a>Last Visit</a>
+                     <a> -- </a><br>
+                  </div>
+                  <div class="pc">
+                     <a>Primary Concern</a>
+                     <a class="ns">Not Specified</a>
+                  </div>
+                  <div class="st">
+                     <p>PENDING DATA</p>
+                  </div>
+               </div>
+               <div class="ai">
+                  <label>AVAILABILITY INSGIGHTS</label>
+                  <p>Dr. Fady usaully has 85% attendance for morning slots between 9:00 - 11:00 AM</p>
+                  <div class="av">
+                     <img src="Green dot.png"><a class="msa">Morning solts available</a><br>
+                     <img src="Yellow dot.png"><a class="ashd">Afternoon solts high-demand</a>
+                  </div>
+               </div>
+               <div class="sp">
+                  <div class="alert">
+                     <img src="exclamation.png">
+                  </div>
+                  <div class="desc">
+                     <label>Standard Protocol</label>
+                     <a style="color: white;">All new Patient bookings require a pre-screening form validation before final confirmation</a>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

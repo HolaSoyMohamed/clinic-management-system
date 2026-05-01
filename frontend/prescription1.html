@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Prescription - The Clinical Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="prescription1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2 class="tca">The Clinical Atelier</h2>
+            <h6 class="mm">MEDICAL MANAGMENT</h6>
+        </div>
+
+        <div class="options">
+            <a href="Dashbourd.html" class="nav-item"><img src="dashboard.png"> Dashboard </a>
+            <a href="Patient.html" class="nav-item"><img src="group.png"> Patients</a>
+            <a href="Doctor.html" class="nav-item"><img src="medical-team.png"> Doctors</a>
+            <a href="Appointment.html" class="nav-item"><img src="schedule.png"> Appointment</a>
+            <a class="nav-item active"><img src="medical-prescription.png"> Prescriptions</a>
+        </div>
+
+        <div class="sidebar-bottom">
+            <button onclick="window.location.href='Appointment1.html';" class="btn btn-primary btn-new-appointment">
+                <i class="fa-solid fa-plus"></i> NEW APPOINTMENT
+            </button>
+            <a href="LoginP.html" class="logout-link">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="page-title">
+                <h1>Create Prescription</h1>
+                <p>Digital Medical Registry & Pharmaceutical Authorization</p>
+            </div>
+            <div class="issue-date">
+                <div class="issue-date-label">Issue Date</div>
+                <div class="issue-date-value">October 24, 2023</div>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            <div class="left-column">
+                <div class="card">
+                    <div class="form-row">
+                        <div class="form-group form-group-flex-2">
+                            <label class="input-label"><i class="fa-regular fa-user"></i> Patient Name</label>
+                            <div class="input-with-icon">
+                                <input type="text" class="form-control" placeholder="Search registered patients...">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-group form-group-flex-2">
+                            <label class="input-label"><i class="fa-solid fa-stethoscope"></i> Attending Doctor</label>
+                            <select class="form-control">
+                                <option value="thorne">Dr. Thorne (Cardiology)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pharmaceutical Selection -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-file-prescription"></i> Pharmaceutical Selection</h2>
+                    </div>
+                    
+                    <div class="form-row" style="margin-bottom: 16px;">
+                        <div class="form-group form-group-flex-2">
+                            <label class="input-label">Medicine Name</label>
+                            <input type="text" class="form-control" placeholder="e.g. Lisinopril 10mg">
+                        </div>
+                        <div class="form-group">
+                            <label class="input-label">Quantity</label>
+                            <input type="text" class="form-control" placeholder="30 Tablets">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="input-label"><i class="fa-solid fa-list-ul"></i> Dosage Instructions</label>
+                        <textarea class="form-control" placeholder="Take one tablet by mouth once daily..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Clinical Notes & Precautions -->
+                <div class="card">
+                    <div class="form-group">
+                        <label class="input-label"><i class="fa-solid fa-triangle-exclamation"></i> Clinical Notes & Precautions</label>
+                        <textarea class="form-control" placeholder="Mention any potential side effects or specific diet restrictions..."></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                
+                <!-- Doctor Profile -->
+                <div class="card">
+                    <div class="doctor-profile">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Thorne" class="doctor-avatar">
+                        <div class="doctor-name">Dr. Thorne</div>
+                        <div class="doctor-role">Head of Cardiology</div>
+                        <div class="badge-verified">
+                            <i class="fa-solid fa-circle-check"></i> Verified Practitioner
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-file-circle-check"></i> Save Prescription
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fa-solid fa-print"></i> Draft & Print
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Clinical Protocol -->
+                <div class="card protocol-card">
+                    <div class="protocol-header">
+                        <i class="fa-regular fa-lightbulb"></i> Clinical Protocol
+                    </div>
+                    <div class="protocol-text">
+                        Ensure the patient's allergy profile has been reviewed before authorizing new pharmaceutical agents.
+                    </div>
+                </div>
+
+                <!-- Patient History Snapshot -->
+                <div class="card history-card">
+                    <div class="history-title">Patient History Snapshot</div>
+                    <ul class="history-list">
+                        <li class="history-item completed">
+                            <div class="history-med">Amoxicillin 500mg</div>
+                            <div class="history-date">Completed Sep 12, 2023</div>
+                        </li>
+                        <li class="history-item active-refill">
+                            <div class="history-med">Lisinopril 10mg</div>
+                            <div class="history-date">Active Refill</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="footer-left">
+                <div class="footer-logo-box"></div>
+                The Clinical Atelier
+            </div>
+            <div class="footer-right">
+                Encryption Status: AES-256 Medical Grade
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
